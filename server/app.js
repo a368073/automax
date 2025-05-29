@@ -1,11 +1,9 @@
 const http = require('http');
 const fs = require('fs');
 
-// HTTP => (request, response)
-
+// Creación del servidor
 http.createServer((request, response) => {
-    // Si la url es '/' cargar landing page (index.html)
-    // Si no, cargar archivo según ruta en carpeta WWW
+    // Dependiendo de la URL que escriba el usuario se abrre un archivo diferente
     const file = request.url == '/' ?
         './WWW/index.html' : `./WWW${request.url}`;
 
@@ -15,7 +13,7 @@ http.createServer((request, response) => {
             response.write("No se concontró la página");
             response.end();
         } else {
-            // Obtener la extensión para saber Content-Type
+            // Esto es para que el navegador sepa que tipo de archivo le mandamos
             const ext = request.url == '/' ? 'html' : request.url.split('.').pop();
             switch (ext) {
                 case 'html':
