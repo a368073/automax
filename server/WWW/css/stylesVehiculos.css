@@ -1,0 +1,112 @@
+/* Styles css para vehiculos.html */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-container a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-container a:hover {
+    background-color: #d10000;
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #1a1a1a;
+    text-shadow: 3px 3px 0px #d3d3d3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.vehicle {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehicle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #d10000;
+    margin-top: 0;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+strong {
+    color: #1a1a1a;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(209, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 40px auto;
+    max-width: 80%;
+}
+
+.price {
+    font-size: 1.3rem;
+    color: #d10000;
+    font-weight: bold;
+}
+
+.description {
+    font-style: italic;
+    color: #555;
+    padding: 10px 0;
+}
