@@ -1,51 +1,136 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <title>Automax - Landing page</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-    <h1>Bienvenido a Automax</h1>
-    <p>Empresa de renta de autos.</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/contacto.html">Contacto</a>
+            <a href="/acerca.html">Acerca de</a>
+            <a href="/vehiculos.html">Detalles de vehículos</a>
+        </div>
+    </nav>
 
-    <h2>Vehículos disponibles</h2>
+    <div class="carrusel">
 
-    <ul>
-        <li><strong>Chevrolet Aveo</strong> - 2022 - $650/día</li>
-        <li><strong>Nissan Versa</strong> - 2021 - $700/día</li>
-        <li><strong>Toyota Corolla</strong> - 2020 - $750/día</li>
-        <li><strong>Chevrolet Aveo</strong> - 2020 - $450/día</li>
-        <li><strong>Nissan Versa</strong> - 2021 - $500/día</li>
-        <li><strong>Volkswagen Jetta</strong> - 2022 - $650/día</li>
-        <li><strong>Ford Focus</strong> - 2019 - $480/día</li>
-        <li><strong>Kia Rio</strong> - 2023 - $520/día</li>
-        <li><strong>Hyundai Elantra</strong> - 2020 - $530/día</li>
-        <li><strong>Honda Civic</strong> - 2021 - $580/día</li>
-        <li><strong>Chevrolet Onix</strong> - 2022 - $510/día</li>
-        <li><strong>Nissan Sentra</strong> - 2020 - $550/día</li>
-        <li><strong>Mazda 3</strong> - 2023 - $600/día</li>
-        <li><strong>Renault Logan</strong> - 2021 - $470/día</li>
-        <li><strong>Volkswagen Vento</strong> - 2022 - $540/día</li>
-        <li><strong>Ford Fiesta</strong> - 2018 - $460/día</li>
-        <li><strong>Kia Forte</strong> - 2022 - $580/día</li>
-        <li><strong>Hyundai Accent</strong> - 2021 - $490/día</li>
-        <li><strong>Honda Fit</strong> - 2020 - $500/día</li>
-        <li><strong>Chevrolet Spark</strong> - 2019 - $430/día</li>
-        <li><strong>Nissan March</strong> - 2023 - $440/día</li>
-        <li><strong>Mazda CX-3</strong> - 2022 - $650/día</li>
-        <li><strong>Volkswagen Polo</strong> - 2021 - $560/día</li>
-        <li><strong>Ford EcoSport</strong> - 2022 - $620/día</li>
-        <li><strong>Kia Soul</strong> - 2020 - $610/día</li>
-        <li><strong>Hyundai Tucson</strong> - 2021 - $670/día</li>
-        <li><strong>Honda HR-V</strong> - 2022 - $690/día</li>
-        <li><strong>Nissan Kicks</strong> - 2023 - $700/día</li>
-    </ul>
+        <h1 class="tituloHead">Automax</h1>
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
 
+            <div class="slides">
+                <label for="slide1" class="slide">
+                    <img src="./images/carro1.png" alt="Logo 1" class="logocontainer">
+                </label>
+                <label for="slide2" class="slide">
+                    <img src="./images/o(2).png" class="logocontainer" alt="Logo 2">
+                </label>
+                <label for="slide3" class="slide">
+                    <img src="./images/o(1).png" alt="Logo 3"  class="logocontainer">
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+
+        <h2 class="center">Vehículos disponibles</h2>
+        <div class="items">
+            <div class="card">
+                <img src="https://www.mercantilmonclova.com/aveo/img/aveo-azul-ultramar.webp" alt="" />
+                <div class="card-body">
+                    <h2 class="card-title">Chevrolet Aveo
+                        <p class="card-text">- 2022 - $650/día</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.autoasesor.com/blog/wp-content/uploads/2020/12/Nissan-Versa-2021.jpg" alt="Nissan Versa" />
+                <div class="card-body">
+                    <h2 class="card-title">Nissan Versa</h2>
+                    <p class="card-text">2021 - $700/día</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://img.remediosdigitales.com/e5d8bc/toyota-corolla-2020_/1024_2000.jpg" alt="Toyota Corolla" />
+                <div class="card-body">
+                    <h2 class="card-title">Toyota Corolla</h2>
+                    <p class="card-text">2020 - $750/día</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://img.remediosdigitales.com/f8e25b/volkswagen-jetta-2022-precio-mexico_/1366_2000.jpg" alt="Volkswagen Jetta" />
+                <div class="card-body">
+                    <h2 class="card-title">Volkswagen Jetta</h2>
+                    <p class="card-text">2022 - $650/día</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://5659238.fs1.hubspotusercontent-na1.net/hubfs/5659238/ford%202019.webp" alt="Ford Focus" />
+                <div class="card-body">
+                    <h2 class="card-title">Ford Focus</h2>
+                    <p class="card-text">2019 - $480/día</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://img.remediosdigitales.com/51351e/kia-rio-2023-precio-mexico-4/1366_2000.jpg" alt="Kia Rio" />
+                <div class="card-body">
+                    <h2 class="card-title">Kia Rio</h2>
+                    <p class="card-text">2023 - $520/día</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://img.remediosdigitales.com/9e64e1/hyundai-elantra-2020-2/1366_2000.jpg" alt="Hyundai Elantra" />
+                <div class="card-body">
+                    <h2 class="card-title">Hyundai Elantra</h2>
+                    <p class="card-text">2020 - $530/día</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://acnews.blob.core.windows.net/imgnews/extralarge/NAZ_b896903ed5984615b7cc4712755f3cdc.jpg" alt="Honda Civic" />
+                <div class="card-body">
+                    <h2 class="card-title">Honda Civic</h2>
+                    <p class="card-text">2021 - $580/día</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://beta.maxipublica.com/pictures/2024/11/3454/20970679/chevrolet_onix_2022_237890253_b.jpeg" alt="Chevrolet Onix" />
+                <div class="card-body">
+                    <h2 class="card-title">Chevrolet Onix</h2>
+                    <p class="card-text">2022 - $510/día</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://img.remediosdigitales.com/978b01/nissan-sentra-2020-5/1366_2000.jpg" alt="Nissan Sentra" />
+                <div class="card-body">
+                    <h2 class="card-title">Nissan Sentra</h2>
+                    <p class="card-text">2020 - $550/día</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://img.asmedia.epimg.net/resizer/v2/SFWUD7KAINCLVP5XWQFJ6I565A.jpg?auth=635aefac5f9fce3d06340d01a11823289e20476ec7db5e67fa1e27199206bcf1&width=736&height=414&focal=1379%2C595" alt="Mazda 3" />
+                <div class="card-body">
+                    <h2 class="card-title">Mazda 3</h2>
+                    <p class="card-text">2023 - $600/día</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <br>
-
-    <a href="/contacto.html">Contacto</a> | 
-    <a href="/acerca.html">Acerca de</a> | 
-    <a href="/vehiculos.html">Detalles de vehículos</a>
 </body>
+
 </html>

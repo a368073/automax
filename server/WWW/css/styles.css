@@ -1,0 +1,157 @@
+/* Index.html styles */
+
+.carrusel {
+    width: 100%;
+    padding-left: 5%;
+    text-align: center;
+    padding: 2% 0;
+    background-color: #000000;
+    color: white;
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-container a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-container a:hover {
+    background-color: #d10000;
+    border-radius: 5px;
+}
+
+.carrusel .titulo {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.slider input[type="radio"] {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.slide img {
+    max-width: 70%;
+    transition: transform 0.3s ease;
+}
+
+#slide1:checked~.slides label[for="slide1"],
+#slide2:checked~.slides label[for="slide2"],
+#slide3:checked~.slides label[for="slide3"] {
+    transform: scale(1.8);
+    opacity: 1;
+}
+
+#slide1:checked~.slides {
+    transform: translateX(0);
+}
+
+#slide2:checked~.slides {
+    transform: translateX(-0);
+}
+
+#slide3:checked~.slides {
+    transform: translateX(-0);
+}
+
+.logocontainer {
+    width: 60%;
+    height: 60%;
+}
+
+.titulo {
+    color: #000000;
+    text-shadow: 4px 3px 0 #7A7A7A;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+.tituloHead {
+    font-size: xx-large;
+    margin-bottom: 2%;
+    font-weight: 600;
+    font-style: oblique;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    align-content: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 29px 29px 29px 29px;
+    width: 363px;
+    box-shadow: 18px 7px 13px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-color: #000000;
+}
+
+.card-body {
+    background-color: #fffcfc;
+    flex-grow: 1;
+    padding: 24px;
+}
+
+.card-title {
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-text {
+    line-height: 1.4;
+    margin: 10px 0px 0px 0px;
+    font-size: 17px;
+    color: #000000;
+    font-style: italic;
+}
+
+
+/* Final de Index.html styles */
