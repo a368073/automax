@@ -4,8 +4,7 @@ const fs = require('fs');
 // Creación del servidor
 http.createServer((request, response) => {
     // Dependiendo de la URL que escriba el usuario se abrre un archivo diferente
-    const file = request.url == '/' ?
-        './WWW/index.html' : `./WWW${request.url}`;
+    const file = request.url == '/' ? __dirname + '/WWW/index.html' : __dirname + '/WWW' + request.url;
 
     fs.readFile(file, (err, data) => {
         if (err) {

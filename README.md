@@ -98,7 +98,9 @@ docker run -d -p 8888:8888 <usuario>/automax
 http://localhost:8888
 ```
 
- Enlace a la imagen en Docker Hub:  
+ Enlace a la imagen en Docker Hub: 
+
+ Puedes ver el proyecto en [Docker Hub](https://hub.docker.com/repository/docker/glazo/automax/general)
 
 
 ---

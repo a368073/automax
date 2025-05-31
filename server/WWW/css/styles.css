@@ -1,14 +1,44 @@
+
 /* Index.html styles */
 
-.carrusel {
+.carruselAutomax {
     width: 100%;
-    padding-left: 5%;
-    text-align: center;
+    background-color: #000;
     padding: 2% 0;
-    background-color: #000000;
     color: white;
-}
-
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .sliderAutomax {
+    width: 90%;
+    max-width: 2000px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slidesAutomax {
+    display: flex;
+    gap: 150px; /* Espacio entre imágenes */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .slideAutomax img {
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .slideAutomax img:hover {
+    transform: scale(1.2);
+  }
+  
 .navbar {
     background-color: #1a1a1a;
     padding: 15px 0;
